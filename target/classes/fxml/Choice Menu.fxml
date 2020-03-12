@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="800.0" style="-fx-background-color: #faf5d1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.medi.mediport.ChoiceMenuController">
+   <children>
+      <Button fx:id="diagnose" layoutX="199.0" layoutY="211.0" mnemonicParsing="false" onAction="#diagnoseAction" prefHeight="70.0" prefWidth="403.0" style="-fx-background-radius: 50; -fx-background-color: #f7dc6f;" text="Diagnose yourself">
+         <font>
+            <Font name="Haettenschweiler" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="appointment" layoutX="199.0" layoutY="337.0" mnemonicParsing="false" onAction="#appointmentAction" prefHeight="70.0" prefWidth="403.0" style="-fx-background-radius: 50; -fx-background-color: f7dc6f;" text="Make an Appointment">
+         <font>
+            <Font name="Haettenschweiler" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutY="7.0" prefHeight="82.0" prefWidth="845.0" style="-fx-background-color: #7c4d4d;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#400101" layoutX="292.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEDICAL PORTAL">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="26.0" />
+               </font></Text>
+            <Text layoutX="318.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choice Menu">
+               <font>
+                  <Font name="Century Gothic Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button fx:id="profile" layoutY="82.0" mnemonicParsing="false" onAction="#profileAction" style="-fx-background-color: #dac95c; -fx-background-radius: 5;" styleClass="buttonJump" text="Go to Profile">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

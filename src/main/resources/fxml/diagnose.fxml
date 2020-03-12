@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="800.0" style="-fx-background-color: #f9e79f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.medi.mediport.DiagnosisMenuController">
+   <children>
+      <Pane layoutY="7.0" prefHeight="82.0" prefWidth="845.0" style="-fx-background-color: #7c4d4d;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#3c0101" layoutX="282.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEDICAL PORTAL">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="274.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DIAGNOSE YOURSELF">
+               <font>
+                  <Font name="Century Gothic Bold" size="25.0" />
+               </font></Text>
+         </children>
+      </Pane>
+      <Button fx:id="profile" layoutY="82.0" mnemonicParsing="false" onAction="#profileAction" style="-fx-background-color: #dac95c; -fx-background-radius: 5;" styleClass="buttonJump" text="Go to Profile" />
+      <ScrollPane layoutX="126.0" layoutY="188.0" prefHeight="224.0" prefViewportHeight="447.0" prefViewportWidth="141.0" prefWidth="224.0" style="-fx-background-color: #fcf3cf; -fx-border-color: #7c4d4d; -fx-border-radius: 5; -fx-border-width: 3;">
+         <content>
+            <GridPane layoutX="131.0" layoutY="88.0" prefHeight="447.0" prefWidth="212.0" style="-fx-background-color: #fcf3cf;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <CheckBox fx:id="ReducedUrine" layoutX="157.0" layoutY="264.0" mnemonicParsing="false" text="Reduced Urine" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="Nausea" layoutX="157.0" layoutY="221.0" mnemonicParsing="false" text="Nausea" />
+                  <CheckBox fx:id="SwellingOrgan" layoutX="157.0" layoutY="305.0" mnemonicParsing="false" text="Swelling of Organs" GridPane.rowIndex="2" />
+                  <CheckBox fx:id="SevereHeadache" mnemonicParsing="false" text="Severe Headache" GridPane.rowIndex="5" />
+                  <CheckBox fx:id="ExtremeFatigue" mnemonicParsing="false" text="Extreme Fatigue" GridPane.rowIndex="3" />
+                  <CheckBox fx:id="BlurryVision" mnemonicParsing="false" text="Blurry Vision" GridPane.rowIndex="4" />
+                  <CheckBox fx:id="BurningStomach" mnemonicParsing="false" text="Burning Stomach" GridPane.rowIndex="6" />
+                  <CheckBox fx:id="ChestPain" mnemonicParsing="false" text="Chest Pain" GridPane.rowIndex="7" />
+                  <CheckBox fx:id="ExtremeSweating" mnemonicParsing="false" text="Extreme Sweating" GridPane.rowIndex="8" />
+                  <CheckBox fx:id="FrequentUrinatory" mnemonicParsing="false" text="Frequent Urination" GridPane.rowIndex="9" />
+                  <CheckBox fx:id="Cough" mnemonicParsing="false" text="Cough" GridPane.rowIndex="10" />
+                  <CheckBox fx:id="SwallowingDifficulty" mnemonicParsing="false" text="Swallowing difficulty" GridPane.rowIndex="11" />
+                  <CheckBox fx:id="Fever" mnemonicParsing="false" text="Fever" GridPane.rowIndex="12" />
+                  <CheckBox fx:id="HearingDifficulty" mnemonicParsing="false" text="Hearing difficulty" GridPane.rowIndex="13" />
+                  <CheckBox fx:id="Indigestion" mnemonicParsing="false" text="Indigestion" GridPane.rowIndex="14" />
+                  <CheckBox fx:id="Sholderache" mnemonicParsing="false" prefHeight="21.0" prefWidth="213.0" text="Shoulderache" GridPane.rowIndex="15" />
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <TextField editable="false" layoutX="105.0" layoutY="144.0" prefHeight="31.0" prefWidth="266.0" style="-fx-background-color: #f7dc6f; -fx-background-radius: 10; -fx-border-color: #7c4d4d; -fx-border-width: 3; -fx-border-radius: 10;" text="Choose the symptoms of your disease" />
+      <Button fx:id="pressDiagnose" layoutX="94.0" layoutY="437.0" mnemonicParsing="false" onAction="#pressDiagnoseAction" prefHeight="57.0" prefWidth="282.0" style="-fx-background-color: #f9e79f; -fx-border-color: #7c4d4d; -fx-border-width: 3;" styleClass="buttonYellow" text="Diagnose">
+         <font>
+            <Font name="Century Gothic Italic" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="gotoAppointment" layoutX="382.0" layoutY="323.0" mnemonicParsing="false" onAction="#gotoAppointmentAction" prefHeight="57.0" prefWidth="401.0" style="-fx-background-color: #f9e79f;" visible="false">
+         <font>
+            <Font name="Century Gothic Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="alreadySelected" layoutX="454.0" layoutY="437.0" prefHeight="57.0" prefWidth="308.0" />
+      <Label fx:id="diagnoseLabel" layoutX="385.0" layoutY="181.0" prefHeight="47.0" prefWidth="401.0">
+         <font>
+            <Font name="Century Gothic" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+.buttonmain{
+    -fx-font-weight: bold;
+    -fx-background-color:   #7c4d4d;
+    -fx-background-radius: 20;
+    -fx-font-size: 16;
+    -fx-text-fill: white;
+
+}
+.bottonmain:hover{
+    -fx-border-color: #fcf3cf ;
+    -fx-border-width: 5;
+    -fx-border-radius: 15;
+
+}
+.buttonJump{
+    -fx-font-weight: bold;
+    -fx-background-color:   dac95c;
+    -fx-background-radius: 5;
+    -fx-font-size: 16;
+    -fx-text-fill: #3d6d97;
+}
+.buttonJump:hover{
+    -fx-border-color: #fcf3cf ;
+    -fx-border-width: 4;
+    -fx-border-radius: 5;
+}
+.buttonSignup{
+    -fx-font-weight: bold;
+    -fx-background-color:    #fcf3cf;
+    -fx-background-radius: 10;
+    -fx-font-size: 20;
+    -fx-text-fill: black;
+}
+.buttonSignup:hover{
+    -fx-border-color:  #faf1a0  ;
+    -fx-border-width: 5;
+    -fx-border-radius: 10;
+}
+.buttonYellow{
+    -fx-font-weight: bold;
+    -fx-background-color:   #f7dc6f;
+    -fx-background-radius: 15;
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+}
+.buttonYellow:hover{
+    -fx-border-color:  #f9e79f  ;
+    -fx-border-width: 5;
+    -fx-border-radius: 10;
+}

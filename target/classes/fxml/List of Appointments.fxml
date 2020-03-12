@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="380.0" prefWidth="410.0" style="-fx-background-color: faf5d1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.medi.mediport.ViewAppointmentsController">
+    <children>
+        <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" layoutX="72.0" layoutY="73.0" minHeight="16" minWidth="69" prefHeight="211.0" prefWidth="277.0" textFill="#7c3333" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="done" layoutX="168.0" layoutY="315.0" onAction="#doneAction" prefHeight="36.0" prefWidth="75.0" styleClass="buttonmain" text="Done" />
+    </children>
+</AnchorPane>

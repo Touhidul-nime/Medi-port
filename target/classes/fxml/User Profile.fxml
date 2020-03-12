@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="800.0" style="-fx-background-color: #faf5d1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.medi.mediport.UserProfileController">
+   <children>
+      <Pane layoutY="7.0" prefHeight="76.0" prefWidth="800.0" style="-fx-background-color: #7c4d4d;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#540606" layoutX="282.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEDICAL PORTAL">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="26.0" />
+               </font></Text>
+            <Text layoutX="309.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   Profile Page" wrappingWidth="181.396484375">
+               <font>
+                  <Font name="Century Gothic Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <GridPane fx:id="gpPatient" layoutX="112.0" layoutY="150.0" prefHeight="273.0" prefWidth="593.0" visible="false">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ChoiceBox fx:id="patientBloodGroup" disable="true" focusTraversable="false" layoutX="400.0" layoutY="369.0" prefHeight="25.0" prefWidth="91.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Text layoutX="82.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="82.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sex" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="82.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="80.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Group" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="patientPhoneNumber" editable="false" focusTraversable="false" layoutX="400.0" layoutY="325.0" prefHeight="25.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="patientUsername" editable="false" focusTraversable="false" layoutX="397.0" layoutY="147.0" prefHeight="25.0" prefWidth="223.0" GridPane.columnIndex="1" />
+            <ChoiceBox fx:id="patientSex" disable="true" focusTraversable="false" layoutX="397.0" layoutY="280.0" prefHeight="25.0" prefWidth="95.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Text layoutX="82.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="patientAge" editable="false" focusTraversable="false" layoutX="400.0" layoutY="241.0" prefHeight="25.0" prefWidth="52.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Text layoutX="85.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="patientName" editable="false" focusTraversable="false" layoutX="397.0" layoutY="197.0" prefHeight="25.0" prefWidth="223.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane fx:id="gpDoctor" layoutX="149.0" layoutY="114.0" prefHeight="377.0" prefWidth="544.0" visible="false">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="doctorPhoneNumber" editable="false" focusTraversable="false" layoutX="315.0" layoutY="335.0" opacity="0.9" prefHeight="25.0" prefWidth="122.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="doctorMedicalDegrees" editable="false" focusTraversable="false" layoutX="315.0" layoutY="299.0" opacity="0.9" prefHeight="31.0" prefWidth="122.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Text layoutX="201.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="188.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="doctorUsername" editable="false" focusTraversable="false" layoutX="290.0" layoutY="101.0" opacity="0.9" prefHeight="31.0" prefWidth="150.0" GridPane.columnIndex="1" />
+            <Text layoutX="188.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Hours" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="357.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="182.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medical Degrees" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="190.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chamber" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="doctorHoursFrom" alignment="CENTER" editable="false" focusTraversable="false" layoutX="298.0" layoutY="463.0" prefHeight="25.0" prefWidth="48.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ChoiceBox fx:id="doctorSpecialistIn" disable="true" focusTraversable="false" layoutX="315.0" layoutY="254.0" prefHeight="25.0" prefWidth="122.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="doctorName" editable="false" focusTraversable="false" layoutX="315.0" layoutY="215.0" opacity="0.9" prefHeight="31.0" prefWidth="122.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextArea fx:id="doctorChamber" editable="false" focusTraversable="false" layoutX="294.0" layoutY="375.0" opacity="0.9" prefHeight="72.0" prefWidth="142.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="doctorHoursTo" editable="false" focusTraversable="false" layoutX="392.0" layoutY="463.0" opacity="0.9" prefHeight="25.0" prefWidth="48.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Text layoutX="182.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="182.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Specialist in" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+      <Button fx:id="edit" layoutX="73.0" layoutY="512.0" mnemonicParsing="false" onAction="#editAction" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #34495e;" text="Edit" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="save" layoutX="204.0" layoutY="512.0" mnemonicParsing="false" onAction="#saveAction" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #34495e;" text="Save" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="choiceMenu" layoutY="76.0" mnemonicParsing="false" onAction="#choiceMenuAction" prefHeight="32.0" prefWidth="108.0" style="-fx-background-color: #dac95c; -fx-background-radius: 5;" styleClass="buttonJump" text="Main Menu">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="signOut" layoutX="723.0" layoutY="76.0" mnemonicParsing="false" onAction="#signOutAction" prefHeight="32.0" prefWidth="103.0" style="-fx-background-color: #dac95c; -fx-background-radius: 5;" styleClass="buttonJump" text="Sign Out" AnchorPane.rightAnchor="0.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="338.0" layoutY="512.0" mnemonicParsing="false" onAction="#changePasswordAction" prefHeight="31.0" prefWidth="141.0" style="-fx-background-color: #34495e;" text="Change Password" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="viewAppointments" layoutX="513.0" layoutY="512.0" mnemonicParsing="false" onAction="#viewAppointmentsAction" prefHeight="31.0" prefWidth="161.0" style="-fx-background-color: #34495e;" text="View Appointments" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="deleteAccount" layoutX="716.0" layoutY="551.0" mnemonicParsing="false" onAction="#deleteAccountAction" prefHeight="37.0" prefWidth="141.0" style="-fx-background-color: #dac95c; -fx-background-radius: 5;" styleClass="buttonJump" text="Delete Account" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>
